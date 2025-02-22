@@ -117,46 +117,17 @@ nav button:hover {
   color: #fff;
 }
 
-/* .blog{
-  width: 180px;
-  height: 220px;
-  position: absolute;
-  top: 115px;
-  left: 56%;
-  background-color: #fbf1e5;
-  padding: 9px 2px 2px 22px;
-  border-radius: 20px;
-z-index: 10000000000000000000;
-opacity: 0;
-visibility: hidden;
-  transition:all 0.5s;
-
-}
-.blog ul li{
-  color: var(--header);
-  z-index: 1000000;
-  padding: 6px 17px;
-  font-weight: bold;
-  font-size: 19px;
-  transition:all 1s;
-}
-.rotate:hover .blog{
- opacity: 1;
- visibility: visible;
- background-color: yellow;
-  transition:all 0.5s;
-} */
 
 .blog {
   width: 180px;
-  height: 220px;
+  height: 180px;
   position: absolute;
-  top: 115px;
-  left: 56%;
+  top: 100px;
+  left: 50%;
   background-color: #fbf1e5;
-  padding: 9px 2px 2px 22px;
+  padding: 2px 2px 2px 9px;
   border-radius: 20px;
-  z-index: 1000;
+  z-index: 10000000000000000000000000000000000000000000000000000;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s, visibility 0.5s, background-color 0.5s;
@@ -171,8 +142,8 @@ visibility: hidden;
   transition: all 0.3s;
 }
 
-.rotate:active .blog {
-  z-index: 1000;
+.rotate:hover .blog {
+  z-index: 1000000000000000;
   opacity: 1;
   visibility: visible;
 
@@ -180,21 +151,22 @@ visibility: hidden;
 
 /* ///////////////////////////////////////////// */
 main {
-  height: 90vh;
-  margin-top: 90px;
+  height: 100vh;
+  margin-top: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px 30px;
   overflow: hidden;
   flex-wrap: wrap;
-
+z-index: 1;
   & .image1 img,
   .image2 img,
   .image3 img {
     width: 440px;
     height: 430px;
     border-radius: 20px;
+    z-index: 1;
   }
 
 }
@@ -203,7 +175,7 @@ main {
 .image2,
 .image3 {
   position: relative;
-
+  z-index: 1;
 
 }
 
@@ -335,7 +307,7 @@ main {
 }
 
 .info:hover .div {
-  z-index: 10000;
+  z-index: 100;
   background-color: var(--div);
   color: #fff;
   opacity: 0, 5;
